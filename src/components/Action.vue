@@ -1,0 +1,15 @@
+<template>
+    <div class="py-16 flex justify-center space-x-8">
+        <div v-for="link in links" :key="link.text">
+            <a class="glow-orange px-16 py-4 font-semibold text-2xl text-white hover:text-white active:text-white bg-orange-500 hover:bg-orange-500 active:bg-orange-600 rounded-full transition" :href="link.url" target="_blank">{{ link.text }}</a>
+        </div>
+    </div>
+</template>
+
+<!-- Script -->
+<script setup>
+const links = [
+    { 'text': '발표자 신청', 'url': '#' },
+    { 'text': '후원사 문의', 'url': '#' },
+]
+</script>

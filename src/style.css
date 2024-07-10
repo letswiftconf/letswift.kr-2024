@@ -2,13 +2,101 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .text-rainbow {
+    background: linear-gradient(to right, 
+    #007AFF 0%, 
+    #5856D6 16.66%, 
+    #953cc2 33.33%, 
+    #FF2D55 50%, 
+    #FF3B30 66.66%, 
+    #FF9500 83.33%, 
+    #FF9500 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+    background-size: 200% 100%;
+    animation: rainbowAnimation 7s linear infinite;
+  }
+  
+  @keyframes rainbowAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .glow-orange {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06), 0 0 20px rgba(255, 165, 0, 0.6);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .glow-orange:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.06), 0 0 30px rgba(255, 165, 0, 0.8);
+  }
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
+  
+  background-color: black;
+  
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: black;
+  
+  background-color:hsla(0,0%,0%,0);
+  background:
+  radial-gradient(at 40% 20%, hsla(28,100%,11%,1) 0px, transparent 50%),
+  radial-gradient(at 80% 0%, hsla(189,100%,10%,1) 0px, transparent 50%),
+  radial-gradient(at 0% 50%, hsla(355,100%,8%,1) 0px, transparent 50%),
+  radial-gradient(at 80% 50%, hsla(340,100%,9%,1) 0px, transparent 50%),
+  radial-gradient(at 0% 100%, hsla(22,100%,20%,1) 0px, transparent 50%),
+  radial-gradient(at 80% 100%, hsla(242,100%,17%,1) 0px, transparent 50%),
+  radial-gradient(at 0% 0%, hsla(343,100%,9%,1) 0px, transparent 50%);
+  
+  background-size: 150% 150%;
+  animation: backgroundAnimation 30s linear infinite;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 0%;
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+  }
+  25%{
+    background-position: 0% 100%;
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+  }
+  50%{
+    background-position: 100% 100%;
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+  }
+  75%{
+    background-position: 100% 0%;
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+  }
+  100% {
+    background-position: 0% 0%;
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+  }
+}
+
+#app {
+  margin: 0 auto;
+  text-align: center;
 }
