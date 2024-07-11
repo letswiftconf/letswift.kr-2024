@@ -16,7 +16,11 @@
                         <span class="text-slate-400"> All rights reserved.</span>
                     </div>
                     <div class="flex space-x-2">
-                        <div><a href="#" class="text-orange-400 hover:text-orange-500 active:orange-600">Code of Conduct</a></div>
+                        <div>
+                            <router-link to="/CodeOfConduct" class="text-orange-400 hover:text-orange-500 active:orange-600">
+                                Code of Conduct
+                            </router-link>
+                        </div>
                         <div class="select-none text-slate-600">|</div>
                         <div><a href="https://apps.apple.com/app/id1282995254" target="_blank" class="text-orange-400 hover:text-orange-500 active:orange-600">Let'Swift App</a></div>
                         <div class="select-none text-slate-600">|</div>

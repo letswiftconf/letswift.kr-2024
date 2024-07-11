@@ -19,9 +19,9 @@
 
 <!-- Script -->
 <script setup>
-import image2023 from '../assets/2023.png'
+import image2023 from '../assets/2023-blue.png'
 import image2022 from '../assets/2022.png'
-import image2020 from '../assets/2020.png'
+import image2020 from '../assets/2020-white.png'
 import image2019 from '../assets/2019.png'
 import image2018 from '../assets/2018.png'
 import image2017 from '../assets/2017.png'
@@ -30,10 +30,10 @@ import image2016 from '../assets/2016.png'
 const events = [
 { 'year': 2023, 'url': 'https://letswift.kr/2023', image: image2023, overlay_class:'bg-black/30', class: '', text_class: '' },
 { 'year': 2022, 'url': 'https://letswift.kr/2022', image: image2022, overlay_class:'bg-black/30', class: '', text_class: '' },
-{ 'year': 2020, 'url': 'https://letswift.kr/2020', image: image2020, overlay_class:'bg-black/50', class: ' bg-white', text_class: '' },
+{ 'year': 2020, 'url': 'https://letswift.kr/2020', image: image2020, overlay_class:'bg-black/30', class: '', text_class: '' },
 { 'year': 2019, 'url': 'https://letswift.kr/2019', image: image2019, overlay_class:'bg-black/30', class: '', text_class: '' },
 { 'year': 2018, 'url': 'https://letswift.kr/2018', image: image2018, overlay_class:'bg-black/30', class: '', text_class: '' },
-{ 'year': 2017, 'url': 'https://letswift.kr/2017', image: image2017, overlay_class:'bg-black/50', class: ' bg-white', text_class: '' },
-{ 'year': 2016, 'url': 'https://letswift.kr/2016', image: image2016, overlay_class:'bg-black/50', class: ' bg-white', text_class: '' },
+{ 'year': 2017, 'url': 'https://letswift.kr/2017', image: image2017, overlay_class:'bg-black/50', class: 'bg-white', text_class: '' },
+{ 'year': 2016, 'url': 'https://letswift.kr/2016', image: image2016, overlay_class:'bg-black/50', class: 'bg-white', text_class: '' },
 ]
 </script>
