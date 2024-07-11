@@ -1,5 +1,5 @@
 <template>
-     <div class="mt-12 flex flex-col text-white h-dvh space-y-4 place-content-center">
+     <div class="mt-12 flex flex-col text-white sm:h-dvh space-y-4 sm:place-content-center">
         <!-- Title -->
         <router-link to="/">
             <div class="font-black text-[3em]">
@@ -9,9 +9,9 @@
         <!-- Code of Conduct -->
         <div class="flex justify-center">
             <div class="px-8 py-12 max-w-[1280px] flex flex-col space-y-2 font-bold">
-                <div class="font-black text-3xl">행동지침</div>
+                <div class="font-black  text-2xl sm:text-3xl">행동지침</div>
                 <div class="py-12">
-                    <div v-for="line in codeOfConduct" :key="line" class="my-8 font-medium text-xl text-slate-200">
+                    <div v-for="line in codeOfConduct" :key="line" class="my-8 font-medium text-sm sm:text-xl text-slate-200">
                         {{ line }}
                     </div>
                 </div>

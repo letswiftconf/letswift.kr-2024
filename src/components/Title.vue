@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col text-white space-y-4 h-dvh place-content-center">
+    <div class="mt-8 sm:mt-0 flex flex-col text-white space-y-4 sm:h-dvh sm:place-content-center">
         <div class="grow"></div>
         <!-- logo-->
         <!-- <div class="flex justify-center">
@@ -10,17 +10,17 @@
             </svg>
         </div> -->
         <!-- Title -->
-        <div class="font-black text-[6em]">
-            <span class="text-rainbow box-shadow-xl">Let'Swift 2024</span>
+        <div class="font-black text-[4em] lg:text-[6em]">
+            <span class="text-rainbow leading-none box-shadow-xl">Let'Swift 2024</span>
         </div>
         <!-- Info -->
         <div class="flex flex-col space-y-2 font-bold">
-            <div class="text-2xl">
+            <div class="text-xl lg:text-2xl">
                 <span class="text-slate-200">2024년 </span>
                 <span>11월 25일</span>
                 <span class="text-slate-200"> 월요일</span>
             </div>
-            <div class="text-xl text-slate-300">
+            <div class="text-lg lg:text-xl text-slate-300">
                 <span>세종대학교</span>
                 <span> 컨벤션홀</span>
             </div>
@@ -32,7 +32,8 @@
         </div>
         <Action/>
         <div class="grow"></div>
-        <div class="py-12 flex justify-center">
+        <!-- Arrow -->
+        <div class="py-12 hidden sm:flex justify-center">
             <svg class="text-slate-400 animate-bounce" width="32px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                 <g stroke="currentColor" stroke-width="1" fill="currentColor">
                     <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/>

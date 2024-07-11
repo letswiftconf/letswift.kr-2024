@@ -2,13 +2,13 @@
     <div>
         <h2 class="font-semibold text-xl text-slate-300">이전 행사 다시 보기</h2>
         <div class="py-6 flex justify-center">
-            <div class="max-w-[1280px] grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-4">
-                <div v-for="event in events" class="w-64 h-44 bg-slate-900 rounded-xl hover:scale-105 transition duration-500">
+            <div class="max-w-[1280px] grid grid-cols-2 lg:grid-cols-4 gap-x-2 gap-y-2 sm:gap-x-4 sm:gap-y-4">
+                <div v-for="event in events" class="w-44 h-32 sm:w-64 sm:h-44 bg-slate-900 rounded-xl hover:scale-105 transition duration-500">
                     <a :href="event.url" target="_blank">
                         <div class="relative w-full h-full overflow-hidden rounded-xl group">
                             <img :src="event.image" class="p-4 w-full h-full object-contain blur-md group-hover:blur-none transition duration-500" :class="event.class"/>
                             <div class=" absolute inset-0 w-full h-full group-hover:invisible transition duration-500" :class="event.overlay_class"></div>
-                            <div class="absolute inset-0 flex items-center justify-center text-slate-100 drop-shadow-xl font-bold text-5xl group-hover:invisible transition duration-500">{{ event.year }}</div>
+                            <div class="absolute inset-0 flex items-center justify-center text-slate-100 drop-shadow-xl font-bold text-3xl sm:text-5xl group-hover:invisible transition duration-500">{{ event.year }}</div>
                         </div>
                     </a>
                 </div>
