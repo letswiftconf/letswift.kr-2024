@@ -5,10 +5,16 @@
             <div class="max-w-[1280px] grid grid-cols-2 lg:grid-cols-4 gap-x-2 gap-y-2 sm:gap-x-4 sm:gap-y-4">
                 <div v-for="event in events" class="w-44 h-32 sm:w-64 sm:h-44 bg-slate-900 rounded-xl hover:scale-105 transition duration-500">
                     <a :href="event.url" target="_blank">
-                        <div class="relative w-full h-full overflow-hidden rounded-xl group">
+                        <div class="hidden sm:flex relative w-full h-full overflow-hidden rounded-xl group">
                             <img :src="event.image" class="p-4 w-full h-full object-contain blur-md group-hover:blur-none transition duration-500" :class="event.class"/>
-                            <div class=" absolute inset-0 w-full h-full group-hover:invisible transition duration-500" :class="event.overlay_class"></div>
+                            <div class="absolute inset-0 w-full h-full group-hover:invisible transition duration-500" :class="event.overlay_class"></div>
                             <div class="absolute inset-0 flex items-center justify-center text-slate-100 drop-shadow-xl font-bold text-3xl sm:text-5xl group-hover:invisible transition duration-500">{{ event.year }}</div>
+                        </div>
+                        <!-- Mobile -->
+                        <div class="flex sm:hidden relative w-full h-full overflow-hidden rounded-xl group">
+                            <img :src="event.image" class="p-4 w-full h-full object-contain transition duration-500" :class="event.class"/>
+                            <div class="absolute inset-0 w-full h-full transition duration-500" :class="event.overlay_class"></div>
+                            <div class="absolute bottom-0 w-full h-10 flex items-center justify-center backdrop-blur-lg bg-black/50 text-slate-100 drop-shadow-xl font-bold text-2xl sm:text-5xl transition duration-500">{{ event.year }}</div>
                         </div>
                     </a>
                 </div>

@@ -10,7 +10,7 @@
             </svg>
         </div> -->
         <!-- Title -->
-        <div class="font-black text-[4em] lg:text-[6em]">
+        <div class="px-1 font-black text-[4em] lg:text-[6em]">
             <span class="text-rainbow leading-none box-shadow-xl">Let'Swift 2024</span>
         </div>
         <!-- Info -->
