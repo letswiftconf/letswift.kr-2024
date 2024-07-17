@@ -9,7 +9,7 @@
 <!-- Script -->
 <script setup>
 const links = [
-    { 'text': '발표자 신청', 'url': 'https://forms.gle/TySjDPjhuFB1haS17' },
-    { 'text': '후원사 문의', 'url': 'mailto:letswift.official@gmail.com?subject=Let%27Swift%202024%20%ED%9B%84%EC%9B%90%EC%82%AC%20%EB%AC%B8%EC%9D%98' },
+    { 'text': '연사자 신청', 'url': 'https://forms.gle/u1HLr6Vm422PM1HN6' },
+    // { 'text': '후원사 문의', 'url': 'mailto:letswift.official@gmail.com?subject=Let%27Swift%202024%20%ED%9B%84%EC%9B%90%EC%82%AC%20%EB%AC%B8%EC%9D%98' },
 ]
 </script>

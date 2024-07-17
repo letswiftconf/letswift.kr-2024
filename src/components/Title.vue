@@ -31,7 +31,7 @@
             </div>
         </div>
         <!-- Action buttons -->
-        <!-- <Action/> -->
+        <Action/>
         <div class="grow"></div>
         <!-- Arrow -->
         <div class="py-12 hidden sm:flex justify-center">
