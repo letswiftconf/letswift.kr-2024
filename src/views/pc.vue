@@ -23,15 +23,16 @@
             <span class="text-rainbow box-shadow-xl">Let'Swift 2024</span>
         </div>
     </router-link>
-    <span class="text-white text-3xl">
-        🪺
-    </span>
+    <Action />
+    <span class="text-white text-3xl">🪺</span>
 </template>
 
 <!-- Script -->
 <script setup>
 import { onMounted } from 'vue'
 import { useRouter } from 'vue-router'
+
+import Action from '../components/Action.vue'
 
 const router = useRouter()
 
