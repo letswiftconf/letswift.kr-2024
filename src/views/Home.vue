@@ -1,12 +1,12 @@
 <template>
-    <Hero/>
-    <Ticket/>
-    <Sponsors/>
-    <Venue/>
-    <Schedule/>
-    <Speakers/>
-    <Organizers/>
-    <FAQ/>
+    <Hero id="hero"/>
+    <Ticket id="ticket"/>
+    <Sponsors id="sponsors"/>
+    <Venue id="venu"/>
+    <Schedule id="schedule"/>
+    <Speakers id="speakers"/>
+    <Organizers id="organizers"/>
+    <FAQ id="faq"/>
 
     <!-- <Title/> -->
     <!-- <Events/>

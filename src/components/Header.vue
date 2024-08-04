@@ -9,15 +9,24 @@
             </router-link>
             <div class="grow"></div>
             <!-- Right -->
-             <div class="flex space-x-6">
-                <h1 class="font-semibold text-[1.2em] text-white ">Sponsors</h1>
-                <h1 class="font-semibold text-[1.2em] text-white ">Venue</h1>
-                <h1 class="font-semibold text-[1.2em] text-white ">Schedule</h1>
-                <h1 class="font-semibold text-[1.2em] text-white ">Speakers</h1>
-                <h1 class="font-semibold text-[1.2em] text-white ">Organizers</h1>
-                <h1 class="font-semibold text-[1.2em] text-white ">FAQ</h1>
-                <h1 class="font-bold text-[1.3em] text-white ">Get Ticket</h1>
+             <div class="flex space-x-6 items-center">
+                <div v-for="item in menu" :key="item">
+                    <a :href="item.link" class="font-semibold text-[1.2em] text-white">{{ item.name }}</a>
+                </div>
+                <a class="mb-8 lg:mb-0 px-4 py-2 font-semibold text-slate-700 hover:text-white active:text-white bg-themeBlue hover:bg-themeBlue/70 active:bg-themeBlue/50 rounded-full transition" href="https://festa.io/events/3860" target="_blank">Get Ticket</a>
              </div>
         </div>
     </header>
 </template>
+
+<!-- Script -->
+<script setup>
+const menu = [
+    { 'name': 'Sponsors', 'link': '#sponsors' },
+    { 'name': 'Venue', 'link': '#venue' },
+    { 'name': 'Schedule', 'link': '#schedule' },
+    { 'name': 'Speakers', 'link': '#speakers' },
+    { 'name': 'Organizers', 'link': '#organizers' },
+    { 'name': 'FAQ', 'link': '#faq' }
+]
+</script>
