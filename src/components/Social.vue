@@ -1,5 +1,5 @@
 <template>
-    <div class="py-16 flex justify-center space-x-8 sm:space-x-20">
+    <div class="flex justify-center space-x-8 sm:space-x-12">
         <div v-for="social in socials" :key="social.name">
             <a :href="social.url" target="_blank" class="text-themeBlue hover:text-themeBlue/70 active:text-themeBlue/50">
                 <component :is="iconComponents[social.image]" fill="white" width="32" height="32"/>
