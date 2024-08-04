@@ -1,7 +1,7 @@
 <template>
     <div class="py-16 flex flex-col sm:flex-row justify-center sm:space-x-8 space-y-12 sm:space-y-0">
         <div v-for="link in links" :key="link.text">
-            <a class="glow-orange px-16 py-4 font-semibold text-lg sm:text-2xl text-white hover:text-white active:text-white bg-orange-500 hover:bg-orange-500 active:bg-orange-600 rounded-full transition" :href="link.url" target="_blank">{{ link.text }}</a>
+            <a class="glow-blue px-16 py-4 font-semibold text-lg sm:text-2xl text-slate-700 hover:text-white active:text-white bg-themeBlue hover:bg-themeBlue/70 active:bg-themeBlue/50 rounded-full transition" :href="link.url" target="_blank">{{ link.text }}</a>
         </div>
     </div>
 </template>

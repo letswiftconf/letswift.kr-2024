@@ -26,7 +26,7 @@
             </div>
             <div>
                 <div class="mt-1">
-                    <button @click="createCalendar" class="text-sm text-orange-400 hover:text-orange-500 active:orange-600">캘린더에 추가</button>
+                    <button @click="createCalendar" class="text-sm text-themeBlue hover:text-themeBlue/70 active:text-themeBlue/50 active:orange-600">캘린더에 추가</button>
                 </div>
             </div>
         </div>

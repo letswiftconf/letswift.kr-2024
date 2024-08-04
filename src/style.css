@@ -5,13 +5,13 @@
 @layer utilities {
   .text-rainbow {
     background: linear-gradient(to right, 
-    #007AFF 0%, 
-    #5856D6 16.66%, 
-    #953cc2 33.33%, 
-    #FF2D55 50%, 
-    #FF3B30 66.66%, 
-    #FF9500 83.33%, 
-    #FF9500 100%);
+    #09FAD2 0%, 
+    /* #5856D6 16.66%, 
+    #953cc2 33.33%,  */
+    #FE52BA 50%, 
+    /* #FF3B30 66.66%, 
+    #FF9500 83.33%,  */
+    #FEF100 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -32,13 +32,13 @@
     }
   }
   
-  .glow-orange {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06), 0 0 20px rgba(255, 165, 0, 0.6);
+  .glow-blue {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06), 0 0 20px rgba(9, 250, 210, 0.6);
     transition: box-shadow 0.3s ease-in-out;
   }
   
-  .glow-orange:hover {
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.06), 0 0 30px rgba(255, 165, 0, 0.8);
+  .glow-blue:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.06), 0 0 30px rgba(9, 250, 210, 0.8);
   }
 }
 
