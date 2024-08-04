@@ -9,10 +9,6 @@ const routes = [
     {
         path: '/CodeOfConduct',
         component: () => import('../views/CodeOfConduct.vue')
-    },
-    {
-        path: '/pc',
-        component: () => import('../views/pc.vue')
     }
 ]
 
